@@ -2,6 +2,7 @@ TODO:
  - static IPs
  - Change all service IPs to those static ones
  - OPNsense
+ - Network map with ports
 
 Look into:
  - Tautulli for plex watch history in overseerr
