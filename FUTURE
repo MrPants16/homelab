@@ -3,8 +3,10 @@ TODO:
  - Change all service IPs to those static ones
  - OPNsense
  - Network map with ports
+ - Network site 
 
 Look into:
  - Tautulli for plex watch history in overseerr
  - Reverse Proxy and SSL for services
  - pulse network monitor
+ - next cloud
