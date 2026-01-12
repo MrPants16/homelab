@@ -1,0 +1,11 @@
+/media
+├── Movies
+│   ├── Movie 1 (Year)
+│   └── Movie 2 (Year)
+├── Shows
+│   ├── Show 1
+│   │   ├── Season 01
+│   │   └── Season 02
+│   └── Show 2
+│       └── Season 01
+└── Incomplete
