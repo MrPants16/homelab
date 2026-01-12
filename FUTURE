@@ -1,0 +1,8 @@
+TODO:
+ - static IPs
+ - Change all service IPs to those static ones
+ - OPNsense
+
+Look into:
+ - Tautulli for plex watch history in overseerr
+ - Reverse Proxy and SSL for services
