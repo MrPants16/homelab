@@ -1,0 +1,124 @@
+version: "3.8"
+
+services:
+  gluetun:
+    image: qmcgaw/gluetun:latest
+    container_name: gluetun
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    volumes:
+      - /opt/docker/gluetun:/gluetun
+    environment:
+      - VPN_SERVICE_PROVIDER=nordvpn
+      - VPN_TYPE=openvpn
+      - OPENVPN_USER=user
+      - OPENVPN_PASSWORD=pass
+      - SERVER_COUNTRIES=Canada
+      - TZ=America/Edmonton
+      # Add this to allow your TrueNAS local network to access the UIs
+      - FIREWALL_OUTBOUND_SUBNETS=192.168.1.0/24
+      - DNS_ADDRESS=127.0.0.11
+    ports:
+      # Web UIs
+      - "8080:8080" # qBittorrent
+      - "7878:7878" # Radarr
+      - "8989:8989" # Sonarr
+      - "6767:6767" # Bazarr
+      - "5055:5055" # Overseerr
+      - "9696:9696" # Prowlarr
+      - "8191:8191" # Flaresolverr
+      # Torrent Traffic
+      - "6881:6881" 
+      - "6881:6881/udp"
+    restart: unless-stopped
+
+  qbittorrent:
+    image: lscr.io/linuxserver/qbittorrent:latest
+    container_name: qbittorrent
+    network_mode: "service:gluetun"
+    depends_on:
+      - gluetun
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Edmonton
+      - WEBUI_PORT=8080
+    volumes:
+      - /opt/docker/qbittorrent:/config
+      - /mnt/media:/downloads
+    restart: unless-stopped
+
+  radarr:
+    image: lscr.io/linuxserver/radarr:latest
+    container_name: radarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Edmonton
+    volumes:
+      - /opt/docker/radarr:/config
+      - /mnt/media:/media
+    network_mode: "service:gluetun"
+    restart: unless-stopped
+
+  sonarr:
+    image: lscr.io/linuxserver/sonarr:latest
+    container_name: sonarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Edmonton
+    volumes:
+      - /opt/docker/sonarr:/config
+      - /mnt/media:/media
+    network_mode: "service:gluetun"
+    restart: unless-stopped
+
+  bazarr:
+    image: lscr.io/linuxserver/bazarr:latest
+    container_name: bazarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Edmonton
+    volumes:
+      - /opt/docker/bazarr:/config
+      - /mnt/media:/media
+    network_mode: "service:gluetun"
+    restart: unless-stopped
+
+  overseerr:
+    image: lscr.io/linuxserver/overseerr:latest
+    container_name: overseerr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Edmonton
+    volumes:
+      - /opt/docker/overseerr:/config
+    network_mode: "service:gluetun"
+    restart: unless-stopped
+
+  prowlarr:
+    image: lscr.io/linuxserver/prowlarr:latest
+    container_name: prowlarr
+    environment:
+    - PUID=1000
+    - PGID=1000
+    - TZ=America/Edmonton
+    volumes:
+    - /opt/docker/prowlarr:/config
+    - /mnt/media:/media
+    network_mode: "service:gluetun"
+    restart: unless-stopped
+
+  flaresolverr:
+    image: ghcr.io/flaresolverr/flaresolverr:latest
+    container_name: flaresolverr
+    network_mode: "service:gluetun"
+    environment:
+      - LOG_LEVEL=info
+      - TZ=America/Edmonton
+    restart: unless-stopped
