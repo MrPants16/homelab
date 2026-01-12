@@ -4,6 +4,7 @@ TODO:
  - OPNsense
  - Network map with ports
  - Network site 
+ - Pi Hole Unbound to speed up network 
 
 Look into:
  - Tautulli for plex watch history in overseerr
