@@ -4,10 +4,10 @@ TODO:
  - OPNsense
  - Network map with ports
  - Network site 
+ - Reverse proxy and HTTPS and SSL
  - Pi Hole Unbound to speed up network 
 
 Look into:
  - Tautulli for plex watch history in overseerr
- - Reverse Proxy and SSL for services
  - pulse network monitor
  - next cloud
