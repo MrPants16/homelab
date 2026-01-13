@@ -37,7 +37,7 @@ defaults:
   colorTheme: auto # One of 'auto', 'light', or 'dark'
 
 # Optional theming
-theme: default # 'default' or one of the themes available in 'src/assets/themes'.
+theme: dark # 'default' or one of the themes available in 'src/assets/themes'.
 
 # Optional custom stylesheet
 # Will load custom CSS files. Especially useful for custom icon sets.
@@ -61,7 +61,7 @@ colors:
     card-shadow: rgba(0, 0, 0, 0.1)
     link: "#3273dc"
     link-hover: "#363636"
-    background-image: "/mnt/nas/data/homer/background.jpg" # prefix with your sub subpath if any (ex: /homer/assets/...)
+    background-image: "assets/background.jpg" # prefix with your sub subpath if any (ex: /homer/assets/...)
   dark:
     highlight-primary: "#3367d6"
     highlight-secondary: "#4285f4"
@@ -79,12 +79,6 @@ colors:
 
 # Optional message
 # message:
-#   # url: "https://<my-api-endpoint>" # Can fetch information from an endpoint to override value below.
-#   # mapping: # allows to map fields from the remote format to the one expected by Homer
-#   #   title: 'id' # use value from field 'id' as title
-#   #   content: 'value' # value from field 'value' as content
-#   # refreshInterval: 10000 # Optional: time interval to refresh message
-#   #
 #   # Real example using chucknorris.io for showing Chuck Norris facts as messages:
 #   # url: https://api.chucknorris.io/jokes/random
 #   # mapping:
@@ -125,24 +119,31 @@ services:
         # Alternatively a fa icon can be provided:
         # icon: "fab fa-jenkins"
         subtitle: "Media player and server"
-        tag: "app"
+        tag: "media plex"
         keywords: "self hosted media" # optional keyword used for searching purpose
         url: "http://192.168.1.154:32400/web/index.html"
         target: "_blank" # optional html tag target attribute
       - name: "Overseerr"
         logo: "assets/tools/sample2.png"
         subtitle: "Media Requester"
-        tag: "app"
-        # Optional tagstyle
+        tag: "media overseerr"
         tagstyle: "is-success"
         url: "http://192.168.1.154:5055"
       - name: "qBittorrent"
         logo: "assets/tools/sample2.png"
-        subtitle: "Another application"
-        tag: "app"
-        # Optional tagstyle
-        tagstyle: "is-success"
+        subtitle: "Torrent Downloader"
+        tag: "media downloads qbittorrent"
         url: "http://192.168.1.154:8080"
+      - name: "Sonarr"
+        logo: "assets/tools/sample2.png"
+        subtitle: "TV Series handler"
+        tag: "media sonarr"
+        url: "http://192.168.1.154:8989"
+      - name: "Bazarr"
+        logo: "assets/tools/sample2.png"
+        subtitle: "Movie handler"
+        tag: "media movie bazarr"
+        url: "http://192.168.1.154:6767"
   - name: "Other group"
     icon: "fas fa-heartbeat"
     items:
