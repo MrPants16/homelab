@@ -9,9 +9,8 @@
 title: "Network Homepage"
 subtitle: "Pants Network"
 # documentTitle: "Welcome" # Customize the browser tab text
-logo: "assets/logo.png"
-# Alternatively a fa icon can be provided:
-# icon: "fas fa-skull-crossbones"
+# logo: "assets/logo.png"
+icon: "fas fa-coffee"
 
 header: false # Set to false to hide the header
 # Optional: Different hotkey for search, defaults to "/"
@@ -37,7 +36,7 @@ defaults:
   colorTheme: auto # One of 'auto', 'light', or 'dark'
 
 # Optional theming
-theme: dark # 'default' or one of the themes available in 'src/assets/themes'.
+theme: auto # 'default' or one of the themes available in 'src/assets/themes'.
 
 # Optional custom stylesheet
 # Will load custom CSS files. Especially useful for custom icon sets.
@@ -111,6 +110,18 @@ links:
 # First level array represents a group.
 # Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
 services:
+  - name: "Apps"
+    icon: "fas fa-coffee"
+    items:
+      - name: "Pi-hole"
+        logo: "assets/tools/sample.png"
+        # subtitle: "Network-wide Ad Blocking" # optional, if no subtitle is defined, PiHole statistics will be shown
+        tag: "other"
+        url: "http://192.168.1.200/admin"
+        type: "PiHole" # optional, loads a specific component that provides extra features. MUST MATCH a file name (without file extension) available in `src/components/services`
+        target: "_blank" # optional html a tag target attribute
+        # class: "green" # optional custom CSS class for card, useful with custom stylesheet
+        # background: red # optional color for card to set color directly without custom stylesheet
   - name: "Media"
     icon: "fas fa-code-branch"
     items:
@@ -144,15 +155,41 @@ services:
         subtitle: "Movie handler"
         tag: "media movie bazarr"
         url: "http://192.168.1.154:6767"
-  - name: "Other group"
-    icon: "fas fa-heartbeat"
+      - name: "Prowlarr"
+        logo: "assets/tools/sample2.png"
+        subtitle: "Torrent Indexer"
+        tag: "media movie prowlarr"
+        url: "http://192.168.1.154:9696"
+      - name: "Flaresolverr"
+        logo: "assets/tools/sample2.png"
+        subtitle: "Torrent Indexer"
+        tag: "media movie flaresolverr"
+        url: "http://192.168.1.154:8191"
+  - name: "Network Systems"
+    icon: "fas fa-user-o"
     items:
-      - name: "Pi-hole"
-        logo: "assets/tools/sample.png"
-        # subtitle: "Network-wide Ad Blocking" # optional, if no subtitle is defined, PiHole statistics will be shown
-        tag: "other"
-        url: "http://192.168.1.200/admin"
-        type: "PiHole" # optional, loads a specific component that provides extra features. MUST MATCH a file name (without file extension) available in `src/components/services`
-        target: "_blank" # optional html a tag target attribute
-        # class: "green" # optional custom CSS class for card, useful with custom stylesheet
-        # background: red # optional color for card to set color directly without custom stylesheet
+      - name: "Raptor Portainer"
+        logo: "assets/tools/sample2.png"
+        subtitle: "VM Host for systems"
+        tag: "proxmox host vm"
+        url: "http://192.168.1.154:9000"
+      - name: "Odin Portainer"
+        logo: "assets/tools/sample2.png"
+        subtitle: "VM Host for systems"
+        tag: "proxmox host vm"
+        url: "http://192.168.1.200:9443"
+      - name: "Mimir Truenas Scale"
+        logo: "assets/tools/sample2.png"
+        subtitle: "Network NAS"
+        tag: "nas media storage truenas"
+        url: "http://192.168.1.152"
+      - name: "Proxmox"
+        logo: "assets/tools/sample2.png"
+        subtitle: "VM Host for systems"
+        tag: "proxmox host vm"
+        url: "http://192.168.1.50"
+      - name: "Raptor"
+        logo: "assets/tools/sample2.png"
+        subtitle: "VM Host for systems"
+        tag: "proxmox host vm"
+        url: "http://192.168.1.154"
