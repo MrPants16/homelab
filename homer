@@ -102,7 +102,7 @@ colors:
 links:
   - name: "Github"
     icon: "fab fa-github"
-    url: "https://https://github.com/MrPants16/homelab/"
+    url: "https://github.com/MrPants16/homelab"
     target: "_blank" # optional html tag target attribute
   - name: "link 2"
     icon: "fas fa-book"
