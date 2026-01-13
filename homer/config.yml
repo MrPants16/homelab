@@ -124,14 +124,14 @@ services:
         logo: "assets/tools/sample.png"
         # Alternatively a fa icon can be provided:
         # icon: "fab fa-jenkins"
-        subtitle: "Bookmark example"
+        subtitle: "Media player and server"
         tag: "app"
         keywords: "self hosted media" # optional keyword used for searching purpose
         url: "http://192.168.1.154:32400/web/index.html"
         target: "_blank" # optional html tag target attribute
       - name: "Overseerr"
         logo: "assets/tools/sample2.png"
-        subtitle: "Another application"
+        subtitle: "Media Requester"
         tag: "app"
         # Optional tagstyle
         tagstyle: "is-success"
