@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url("../media/background.jpg") center / cover no-repeat;
+}
+
+.header {
+    padding-top: 0;
+    margin-top: 0;
+    background: rgba(0, 0, 0, 0.32);
+    height: 8vh;
+}
+
+.header h1 {
+    margin: 0;
+}

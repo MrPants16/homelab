@@ -192,7 +192,7 @@ services:
         logo: "assets/tools/sample2.png"
         subtitle: "VM Host for systems"
         tag: "proxmox host vm"
-        url: "http://192.168.1.50"
+        url: "http://192.168.1.50:8006"
       - name: "Raptor"
         logo: "assets/tools/sample2.png"
         subtitle: "VM Host for systems"
