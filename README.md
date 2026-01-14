@@ -21,3 +21,4 @@ Ubuntu server (Raptor)
  - qBitttorrent 
  - Immich 
  - Website host for resume
+ - Nginx Proxy Manager
