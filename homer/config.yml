@@ -90,6 +90,11 @@ colors:
 #   # The content also accepts HTML content, so you can add divs, images or whatever you want to make match your needs.
 #   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 
+message:
+  style: "is-danger"
+  title: "Google Search"
+  content: <form action="[https://www.google.com/search](https://www.google.com/search)" method="get"><input name="q" type="text"><input type="submit" value="Google It!"></form>
+
 # Optional navbar
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
 links:
@@ -122,7 +127,7 @@ services:
         target: "_blank" # optional html a tag target attribute
         # class: "green" # optional custom CSS class for card, useful with custom stylesheet
         # background: red # optional color for card to set color directly without custom stylesheet
-  - name: "Media"
+  - name: "// Media"
     icon: "fas fa-code-branch"
     items:
       - name: "Plex"
@@ -165,8 +170,8 @@ services:
         subtitle: "Torrent Indexer"
         tag: "media movie flaresolverr"
         url: "http://192.168.1.154:8191"
-  - name: "Network Systems"
-    icon: "fas fa-user-o"
+  - name: "// Network Systems"
+    # icon: "fas fa-user-o"
     items:
       - name: "Raptor Portainer"
         logo: "assets/tools/sample2.png"
