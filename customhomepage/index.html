@@ -11,13 +11,88 @@
 </head>
 <body>
     <div class="header">
-        <h1>Header div</h1>
+        <h1>Network Homepage <span class="subtitle">Pants Network</span></h1>
+        <div class="nav">
+            <a href="http://192.168.1.154:5055/">Link 1</a>
+        </div>
     </div>
-    <main>
-        <h3>Hello</h3>
-    </main>
-    <footer>
-        <p>Rylan Rees</p>
-    </footer>
+    <div class="main">
+        <div class="search">
+            <h2>// Search</h2>
+            <form
+            id="ddg-site-search"
+            action="https://duckduckgo.com/"
+            method="get"
+            target="_blank">
+            <input
+            type="search"
+            name="q"
+            id="ddg-query"
+            placeholder="Search duckduckgo..."
+            aria-label="Search duckduckgo"
+            required/>
+            <button type="submit">Search</button>
+            </form>
+
+            <script>
+            (function () {
+            const form = document.getElementById("ddg-site-search");
+            const input = document.getElementById("ddg-query");
+
+            form.addEventListener("submit", function () {
+            const domain = window.location.hostname;
+            input.value = "site:" + domain + " " + input.value;
+            });
+            })();
+            </script>
+        </div>
+        <div class="cards">
+            <div class="column_title">
+                <h2>// Apps</h2>
+            </div>
+            <div class="column_title">
+                <h2>// Media</h2>
+            </div>
+            <div class="column_title">
+                <h2>// Systems</h2>
+            </div>
+            <div class="card">
+                <img src="media/proxmox.png">
+                <span><h3>Proxmox</h3></span>
+                <p>Card 1</p>
+            </div>
+            <div class="card">
+                <img src="media/pihole.png">
+                <p>Card 2</p>
+            </div>
+            <div class="card">
+                <p>Card 3</p>
+            </div>
+            <div class="card">
+                <p>Card 4</p>
+            </div>
+            <div class="card">
+                <p>Card 1</p>
+            </div>
+            <div class="card">
+                <p>Card 2</p>
+            </div>
+            <div class="card">
+                <p>Card 3</p>
+            </div>
+            <div class="card">
+                <p>Card 4</p>
+            </div>
+            <div class="card">
+                <p>Card 2</p>
+            </div>
+            <div class="card">
+                <p>Card 3</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Made by: Rylan Rees</p>
+    </div>
 </body>
 </html>

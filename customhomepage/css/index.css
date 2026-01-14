@@ -1,18 +1,91 @@
 body {
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     background:
         linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
         url("../media/background.jpg") center / cover no-repeat;
+    background-attachment: fixed;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 8px;
+    color: bisque;
 }
 
 .header {
     padding-top: 0;
     margin-top: 0;
+    top: 0;
     background: rgba(0, 0, 0, 0.32);
     height: 8vh;
+    width: 100%;
+    position: fixed;
 }
 
 .header h1 {
     margin: 0;
+    margin-left: 8px;
+}
+
+.subtitle {
+    font-size: medium;
+}
+
+.nav {
+    padding-top: 0.5rem;
+    bottom: 0;
+}
+
+.main {
+    position: relative;
+    padding-top: 8vh;
+    padding-bottom: 3vh;
+}
+
+.search {
+    padding: 1rem 1.5rem;
+    width: 50%;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.search form {
+    padding-left: 0.5rem;
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.32);
+    height: 3vh;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.footer p {
+    color:bisque;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.column_title {
+
+}
+
+.card {
+    display: flex;
+    height: 2.5vh;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid bisque; 
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.card:hover {
+    transition: 0.3s;
 }
