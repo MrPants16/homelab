@@ -11,3 +11,4 @@ Look into:
  - Tautulli for plex watch history in overseerr
  - pulse network monitor
  - next cloud
+ - Email Aliases 
