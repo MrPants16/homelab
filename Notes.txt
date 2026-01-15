@@ -6,6 +6,8 @@ TODO:
  - Network site 
  - Reverse proxy and HTTPS and SSL
  - Pi Hole Unbound to speed up network 
+ - Unbound DNS
+ - Next cloud or some cloud services (replace google)
 
 Look into:
  - Tautulli for plex watch history in overseerr
