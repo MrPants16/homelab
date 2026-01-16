@@ -14,3 +14,9 @@ Look into:
  - pulse network monitor
  - next cloud
  - Email Aliases 
+
+To change when do static IPs:
+ - NUT settings
+ - Media IPs
+ - NAS Locations
+ - Boot drives
