@@ -1,4 +1,4 @@
-/media
+pool1/media
 ├── Movies
 │   ├── Movie 1 (Year)
 │   └── Movie 2 (Year)
