@@ -1,20 +1,20 @@
 # homelab
-Raspberry Pi 3B+ (Odin)
+# Raspberry Pi 3B+ (Odin)
  - Pi Hole
  - NTP server
  - Homer
 
-Opnsense (Hodor)
+# Opnsense (Hodor)
 - Firewall
 - Router
 - Tailscale
 
-TrueNAS Scale (Mimir)
+# TrueNAS Scale (Mimir)
 - General NAS
 - Media storage
 - Immich (photo) storage 
 
-Ubuntu server (Raptor)
+# Ubuntu server (Raptor)
  - Plex
  - NordVPN to direct torrents through
  - Radarr, sonarr, bazarr and overseerr

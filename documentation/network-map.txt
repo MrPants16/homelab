@@ -1,0 +1,5 @@
+TrueNAS: 192.168.1.152
+ - ports: use
+
+Raptor: 192.168.1.154
+ - 8080: qBittorrent

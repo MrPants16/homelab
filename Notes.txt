@@ -9,6 +9,7 @@ TODO:
  - Unbound DNS
  - Next cloud or some cloud services (replace google)
  - NUT Clients
+ - Proxmox, TrueNAS and all other backups I can
 
 Look into:
  - Tautulli for plex watch history in overseerr
