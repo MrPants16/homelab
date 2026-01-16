@@ -1,0 +1,22 @@
+[cyberpower]
+        driver = "usbhid-ups"
+        port = "auto"
+        vendorid = "0764"
+        productid = "0501"
+        product = "CP1500AVRLCDa"
+        serial = "CTHJZ2000440"
+        vendor = "CPS"
+        bus = "002"
+        device = "002"
+        busport = "001"
+
+Monitor user: monuser
+
+check status command: upsc cyberpower@localhost
+
+sudo nano /etc/nut/upsd.users
+[upsremote]
+    password = mysecretpassword
+    upsmon master
+
+port: 3493
