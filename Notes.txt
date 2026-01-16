@@ -8,12 +8,14 @@ TODO:
  - Pi Hole Unbound to speed up network 
  - Unbound DNS
  - Next cloud or some cloud services (replace google)
+ - NUT Clients
 
 Look into:
  - Tautulli for plex watch history in overseerr
  - pulse network monitor
  - next cloud
  - Email Aliases 
+ - NUT web server
 
 To change when do static IPs:
  - NUT settings
