@@ -1,16 +1,13 @@
 TODO:
- - static IPs
- - Change all service IPs to those static ones
  - OPNsense
  - Network map with ports
  - Network site 
- - Reverse proxy and HTTPS and SSL
  - Pi Hole Unbound to speed up network 
- - Unbound DNS
  - Next cloud or some cloud services (replace google)
  - NUT Clients
  - Proxmox, TrueNAS and all other backups I can
  - Internet speed test
+ - Nginx website
 
 Look into:
  - Tautulli for plex watch history in overseerr
