@@ -1,8 +1,8 @@
 # homelab
 # Raspberry Pi 3B+ (Odin)
  - Pi Hole
+ - Unbound
  - NTP server
- - Homer
 
 # Opnsense (Hodor)
 - Firewall
@@ -12,7 +12,6 @@
 # TrueNAS Scale (Mimir)
 - General NAS
 - Media storage
-- Immich (photo) storage 
 
 # Ubuntu server (Raptor)
  - Plex
@@ -22,3 +21,4 @@
  - Immich 
  - Website host for resume
  - Nginx Proxy Manager
+ - Network homepage
