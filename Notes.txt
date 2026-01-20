@@ -10,6 +10,7 @@ TODO:
  - Next cloud or some cloud services (replace google)
  - NUT Clients
  - Proxmox, TrueNAS and all other backups I can
+ - Internet speed test
 
 Look into:
  - Tautulli for plex watch history in overseerr
