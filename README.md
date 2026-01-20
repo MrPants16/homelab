@@ -1,5 +1,5 @@
 # homelab
-[https://mrpants.ca]mrpants.ca
+[https://mrpants.ca] mrpants.ca
 > Odin
 ## // Raspberry Pi 3B+ (Odin)
  - Pi Hole
