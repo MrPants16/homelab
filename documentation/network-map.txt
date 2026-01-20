@@ -1,5 +1,16 @@
 TrueNAS: 192.168.1.152
- - ports: use
+
+Odin: 192.168.1.200
+- "53:53" DNS
+- "80:80" Web UI
 
 Raptor: 192.168.1.154
- - 8080: qBittorrent
+- "8080:8080" # qBittorrent
+- "8180:80" # website
+- "2283:2283" # immich
+- "7878:7878" # Radarr
+- "8989:8989" # Sonarr
+- "6767:6767" # Bazarr
+- "5055:5055" # Overseerr
+- "9696:9696" # Prowlarr
+- "8191:8191" # Flaresolverr
