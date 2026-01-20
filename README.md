@@ -1,19 +1,21 @@
 # homelab
-# Raspberry Pi 3B+ (Odin)
+[https://mrpants.ca]mrpants.ca
+> Odin
+## // Raspberry Pi 3B+ (Odin)
  - Pi Hole
  - Unbound
  - NTP server
 
-# Opnsense (Hodor)
+## // Opnsense (Hodor)
 - Firewall
 - Router
 - Tailscale
 
-# TrueNAS Scale (Mimir)
+## // TrueNAS Scale (Mimir)
 - General NAS
 - Media storage
 
-# Ubuntu server (Raptor)
+## // Ubuntu server (Raptor)
  - Plex
  - NordVPN to direct torrents through
  - Radarr, sonarr, bazarr and overseerr
