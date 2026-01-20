@@ -6,8 +6,8 @@ TODO:
  - Next cloud or some cloud services (replace google)
  - NUT Clients
  - Proxmox, TrueNAS and all other backups I can
- - Internet speed test
  - Nginx website
+ - Add more domains into NPM such as Immich
 
 Look into:
  - Tautulli for plex watch history in overseerr
@@ -15,6 +15,7 @@ Look into:
  - next cloud
  - Email Aliases 
  - NUT web server
+ - Speed testing
 
 To change when do static IPs:
  - NUT settings
