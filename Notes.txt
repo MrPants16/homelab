@@ -7,7 +7,7 @@ TODO:
  - NUT Clients
  - Proxmox, TrueNAS and all other backups I can
  - Nginx website
- - Add more domains into NPM such as Immich
+ - Add more domains into NPM such as Immich, Plex, websit
 
 Look into:
  - Tautulli for plex watch history in overseerr
