@@ -2,17 +2,13 @@ TODO:
  - OPNsense
  - Network map with ports
  - Network site 
- - Next cloud or some cloud services (replace google)
+ - Next cloud
  - NUT Clients
  - Proxmox, TrueNAS and all other backups I can
- - Nginx website
- - Add more domains into NPM such as Immich, Plex, websit
  - Prowalarr indexers, find more 
 
 Look into:
- - Tautulli for plex watch history in overseerr
  - pulse network monitor
- - next cloud
  - Email Aliases 
  - NUT web server
  - Speed testing
