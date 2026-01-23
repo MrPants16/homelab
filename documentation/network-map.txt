@@ -3,6 +3,7 @@ TrueNAS: 192.168.1.152
 Odin: 192.168.1.200
 - "53:53" DNS
 - "80:80" Web UI
+- "5335:5335" Unbound
 
 Raptor: 192.168.1.154
 - "8080:8080" # qBittorrent

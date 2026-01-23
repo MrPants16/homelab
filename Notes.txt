@@ -2,7 +2,6 @@ TODO:
  - OPNsense
  - Network map with ports
  - Network site 
- - Pi Hole Unbound to speed up network 
  - Next cloud or some cloud services (replace google)
  - NUT Clients
  - Proxmox, TrueNAS and all other backups I can
