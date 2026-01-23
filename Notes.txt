@@ -6,13 +6,14 @@ TODO:
  - NUT Clients
  - Proxmox, TrueNAS and all other backups I can
  - Prowalarr indexers, find more 
+ - Squid Proxy 
+ - NPM for LAN caching
 
 Look into:
  - pulse network monitor
  - Email Aliases 
  - NUT web server
  - Speed testing
- - Squid proxy
 
 To change when do static IPs:
  - NUT settings
