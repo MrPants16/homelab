@@ -24,3 +24,5 @@
  - Website host for resume
  - Nginx Proxy Manager
  - Network homepage
+ - Cloudflared
+ - Nextcloud
