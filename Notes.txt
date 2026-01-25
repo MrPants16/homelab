@@ -12,12 +12,15 @@ TODO:
  - Prowalarr indexers, find more 
  - Squid Proxy 
  - NPM for LAN caching
+ - File browser
 
 Look into:
  - pulse network monitor
  - Email Aliases 
  - NUT web server
  - Speed testing
+ - syncthing
+ - metube
 
 To change when do static IPs:
  - NUT settings
