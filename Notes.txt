@@ -2,17 +2,13 @@ TODO:
  - OPNsense
  - Network map with ports
  - Network site 
-<<<<<<< HEAD
- - Next cloud or some cloud services (replace google)
-=======
- - Next cloud
->>>>>>> 7726882fa59eb917671c940d6ae68e3f6a9b063a
  - NUT Clients
  - Proxmox, TrueNAS and all other backups I can
  - Prowalarr indexers, find more 
  - Squid Proxy 
  - NPM for LAN caching
  - File browser
+ - Nextcloud office
 
 Look into:
  - pulse network monitor
