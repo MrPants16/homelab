@@ -17,9 +17,3 @@ Look into:
  - Speed testing
  - syncthing
  - metube
-
-To change when do static IPs:
- - NUT settings
- - Media IPs
- - NAS Locations
- - Boot drives
