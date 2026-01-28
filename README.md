@@ -26,3 +26,4 @@
  - Network homepage
  - Cloudflared
  - Nextcloud
+ - Bitwarden
