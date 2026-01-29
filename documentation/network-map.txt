@@ -15,3 +15,9 @@ Raptor: 192.168.1.154
 - "5055:5055" # Overseerr
 - "9696:9696" # Prowlarr
 - "8191:8191" # Flaresolverr
+
+mrpants.ca:
+ - immich.mrpants.ca
+ - media.mrpants.ca
+ - cloud.mrpants.ca
+ - crafty.mrpants.ca
