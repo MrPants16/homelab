@@ -3,11 +3,7 @@ TODO:
  - Network map with ports
  - Network site 
  - NUT Clients
- - Proxmox, TrueNAS and all other backups I can
- - Prowalarr indexers, find more 
- - Squid Proxy 
- - NPM for LAN caching
- - File browser
+ - Proxmox, TrueNAS and all other backups I can 
  - Nextcloud office
 
 Look into:
